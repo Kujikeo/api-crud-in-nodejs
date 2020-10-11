@@ -1,0 +1,8 @@
+const path = require("path");
+
+module.exports = {
+  /**busca a config do bancoo de dados */
+  config: path.resolve(__dirname, "src", "config", "database.js"),
+  /** criar migration table no banco */
+  "migrations-path": path.resolve(__dirname, "src", "database", "migrations"),
+};
